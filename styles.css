@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 22px;
 }
 
 nav {
@@ -11,7 +12,7 @@ nav {
   padding: 1rem 6rem;
   height: 30px;
   background-color: white;
-  color: black;
+  color: rgb(145, 24, 24);
   font-size: 14px;
   font-family: "Quicksand", Roboto;
   font-weight: bold;
@@ -29,19 +30,19 @@ nav ul {
 nav input {
   padding: 10px 15px;
   border-radius: 40px;
-  background-color: transparent;
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid rgb(145, 24, 24);
   font-size: 1rem;
 }
 
 nav input::placeholder {
   font-size: 12px;
-  font-weight: 500;
   font-family: "Quicksand", Roboto;
+  color: rgb(145, 24, 24);
 }
 
 #hero {
-  background-image: url("./assets/pink-coffee.jpg");
+  background-image: url("./assets/hero-image.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,14 +55,16 @@ nav input::placeholder {
   justify-content: center;
   height: 100%;
   padding-left: 15%;
+  row-gap: 15px;
+  color: white;
 }
 
 #hero-overlay p {
   font-family: arial;
   font-size: 1rem;
-  font-weight: 500;
-
+  font-weight: bold;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 #hero-overlay h1 {
@@ -69,26 +72,22 @@ nav input::placeholder {
   margin-top: 20px;
 }
 
-.button-one {
+button {
   padding: 10px 20px;
   width: fit-content;
   font-size: 14px;
-  background-color: transparent;
+  background-color: rgb(143, 49, 15);
   border-radius: 100px;
-  border: 1px solid black;
+  border: 1px solid rgb(185, 148, 148);
   font-weight: bold;
   margin-top: 20px;
+  color: white;
 }
 
-.button-two {
-  padding: 10px 20px;
-  width: fit-content;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 100px;
-  border: 1px solid black;
-  font-weight: bold;
-  margin-top: 20px;
+button:hover {
+  background-color: rgb(100, 10, 10);
+  border: 1px solid white;
+  color: white;
 }
 
 #features {
@@ -105,7 +104,7 @@ nav input::placeholder {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  border: 1px solid rgb(190, 187, 187);
+  border: 4px solid rgb(243, 238, 238);
   padding: 30px 30px;
   font-family: "Roboto";
 }
@@ -119,7 +118,7 @@ nav input::placeholder {
   flex-direction: column;
   row-gap: 20px;
   width: 60%;
-  padding: 5px 30px;
+  padding: 5px 50px;
   font-family: "Roboto";
 }
 
@@ -134,12 +133,24 @@ nav input::placeholder {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  border: 1px solid black;
+  background-color: white;
+  border: 2px solid rgb(224, 210, 210);
+  color: black;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
   text-align: center;
+  font-size: 14px;
   border-radius: 20px;
+}
+
+#features-card div:hover {
+  background-color: rgb(56, 55, 55);
+  color: white;
+  border: 2px solid white;
+  font-weight: 500;
+  position: relative;
+  top: -15px;
 }
 
 #services {
@@ -162,11 +173,17 @@ nav input::placeholder {
 #services-card div {
   display: flex;
   flex-direction: column;
-  background-color: rgb(187, 169, 172);
+  color: black;
+  background-color: rgb(243, 238, 238);
   row-gap: 10;
   font-size: 14px;
   justify-content: center;
   text-align: center;
   padding: 20px 15px;
   gap: 10px;
+}
+
+#services h2 {
+  font-size: 2rem;
+  color: brown;
 }
