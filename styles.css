@@ -74,7 +74,7 @@ button {
   padding: 10px 20px;
   width: fit-content;
   font-size: 14px;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.87);
   border-radius: 100px;
   border-style: none;
   font-weight: bold;
@@ -100,6 +100,7 @@ button:hover {
   background-color: rgb(100, 10, 10);
   border: 1px solid white;
   color: white;
+  cursor: pointer;
 }
 
 #features {
@@ -115,7 +116,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  border: 1px solid rgb(122, 118, 118);
+  border: 1px solid rgb(204, 199, 199);
   padding: 30px 30px;
   font-family: "Roboto";
 }
@@ -155,6 +156,7 @@ button:hover {
   font-weight: 300;
   border-radius: 20px;
   transition: background-color 0.15s linear;
+  cursor: pointer;
 }
 
 #features-card div:hover {
@@ -164,6 +166,41 @@ button:hover {
   font-weight: 500;
   position: relative;
   top: -15px;
+}
+
+.gallery {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.gallery li img {
+  width: 100%;
+  height: 200px;
+}
+
+.gallery li img:hover {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+
+.recent-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  row-gap: 20px;
+  font-family: "Roboto", arial;
+}
+
+.recent-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 #services {
@@ -196,6 +233,7 @@ button:hover {
   padding: 20px 15px;
   gap: 10px;
   transition: background-color 0.15s linear;
+  cursor: pointer;
 }
 
 #services-card div:hover {
